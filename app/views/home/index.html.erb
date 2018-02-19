@@ -1,9 +1,11 @@
 <div class="container">
-  <h1>String Sorting Program</h1>
-  <p>1. Take some text input.</p>
-  <p>2. Count occurrences of unique words.</p>
-  <p>3. Sort them by frequency.</p>
-  <p>4. Display the sorted list.</p>
+  <div class="c_info">
+    <h2>String Sorting Program</h2>
+    <p>1. Take some text input.</p>
+    <p>2. Count occurrences of unique words.</p>
+    <p>3. Sort them by frequency.</p>
+    <p>4. Display the sorted list.</p>
+  </div>
   <%= form_tag('/home/sort_string', method: :post, remote: true) do %>
     <div class="input-group">
     	<%= text_field_tag 'q', nil, class: 'form-control', placeholder: "Enter String To Sort...", maxlength: 500, :required => true %>
